@@ -1,0 +1,116 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background: #000;
+  color: #ddd;
+}
+
+a {
+  text-decoration: none;
+  color: #EAC372;
+}
+
+/* Utilities */
+h5, .section-title, footer {
+  color: #EAC372;
+}
+
+.btn-custom {
+  border: 1px solid #EAC372;
+}
+
+.btn-custom:hover {
+  background: #EAC372;
+  color: #000;
+}
+
+/* Navbar */
+.navbar {
+  background: #000;
+}
+
+#navLinks a {
+  color: #EAC372;
+}
+
+#navLinks a:hover {
+  color: #fff;
+}
+
+/* Header */
+header {
+  background: url('../img/fern1.jpeg')no-repeat center center/cover;
+  height: 80vh;
+}
+
+.mainTitle {
+  padding-top: 40%;
+  color: #fff;
+}
+
+/* About */
+.about-paragraph p {
+  font-size: 1.2rem;
+}
+
+.about-download .btn-outline {
+  color: #EAC372;
+}
+
+/* Projects */
+.project-img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+
+.card-body {
+  background: #000;
+}
+
+/* Skills */
+.background-logo {
+  background: #222;
+}
+
+.skill-logo {
+  height: 80px;
+  width: 80%;
+  max-width: 100px;
+  object-fit: fill;
+  
+}
+
+/* Contact */
+.contact-logo {
+  width: 50%;
+}
+
+.contact-logo a:hover{
+  color: #ddd;
+}
+
+.contact-form {
+  width: 80%;
+}
+
+.contact-form input:focus,
+.contact-form textarea:focus {
+  outline: none; 
+  border: 3px solid #EAC372;
+}
+
+@media (max-width: 576px) {
+  .mainTitle {
+    padding-top: 50%;
+  }
+
+  .skill-logo {
+    object-fit: fill;
+    padding: 2%;
+  }
+}
