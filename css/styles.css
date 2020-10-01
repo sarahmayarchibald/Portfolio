@@ -43,13 +43,20 @@ h5, .section-title, footer {
 
 /* Header */
 header {
-  background: url('../img/fern1.jpeg')no-repeat center center/cover;
   height: 80vh;
+  background-image: url('../img/computer.jpg');
+    background-position: center;
+    background-size: cover;
 }
 
 .mainTitle {
-  padding-top: 40%;
+  padding-top: 20%;
   color: #fff;
+  letter-spacing: 1rem;
+}
+
+.title-primary {
+  text-transform: uppercase;
 }
 
 /* About */
@@ -63,18 +70,23 @@ header {
 
 /* Projects */
 .project-img {
-  height: 100%;
+  height: 270px;
   width: 100%;
   object-fit: cover;
 }
 
 .card-body {
   background: #000;
+  height: 300px;
+}
+
+#projects span {
+  color: #EAC372;
 }
 
 /* Skills */
 .background-logo {
-  background: #222;
+  background: #444;
 }
 
 .skill-logo {
@@ -112,5 +124,11 @@ header {
   .skill-logo {
     object-fit: fill;
     padding: 2%;
+  }
+}
+
+@media (max-width: 437px) {
+  h1 {
+    font-size: 1.8rem;
   }
 }

@@ -10,7 +10,7 @@
     <!-- Font Awesome -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css" integrity="sha512-1PKOgIY59xJ8Co8+NE6FZ+LOAZKjy+KY8iq0G4B3CyeY6wYHN3yt9PW0XpSriVlkMXe40PTKnXrLnZ9+fkDaog==" crossorigin="anonymous" />
     <title>Sarah-May Archibald | Portfolio</title>
-    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="/css/styles.css">
   </head>
   <body>
     <nav id="mainNavbar" class="navbar navbar-dark navbar-expand-md py-1 fixed-top">
@@ -46,10 +46,10 @@
 
     <header>
       <div class="container" id="home">
-        <div class="row col-lg-12 d-flex justify-content-center align-items-center text-center">
+        <div class="row d-flex justify-content-center align-items-center text-center mx-3">
             <div class="mainTitle">
-              <h1>Sarah-May Archibald</h1>
-              <h2>Front-end Developer</h2>
+              <h1 class="title-primary">Sarah-May / Archibald</h1>
+              <h2 class="title-sub">front-end developer</h2>
             </div>
         </div>
       </div>
@@ -68,11 +68,10 @@
                 <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Illum architecto corrupti sint quis rerum. Doloribus tenetur voluptatum quibusdam ut exercitationem voluptate laboriosam quia earum minima hic eius, magnam iure illum?</p>
               </div>
               <div class="about-download text-center">
-                <a href="" type="button" class="btn btn-custom"><i class="fa fa-download"></i> Download CV</a>
+                <a href="CV-2020.docx" type="button" class="btn btn-custom" download><i class="fa fa-download"></i> Download CV</a>
               </div>
             </div>
             
-
           </div>
           
         </div>
@@ -86,59 +85,71 @@
           <h3>My Projects</h3>
         </div>  
         <div class="row">
-          <div class="col-lg-4 col-6 mb-3">
-            <div class="card">
-              <img class="project-img card-img-top" src="img/Hollywood1.jpg" alt="">
-              <div class="card-body">
-                <h5 class="card-title">First Thing</h5>
-                <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis iste laudantium libero perspiciatis recusandae vitae doloribus placeat tempore ex repellat, quisquam illo nihil corrupti itaque quod natus voluptas atque rem!</p>
-                <a href="#" target="_blank" class="btn btn-outline-warning btn-sm my-1"><i class="fas fa-external-link-alt"></i> Project Link</a>
-                <a href="#" target="_blank" class="btn btn-outline-light btn-sm"><i class="fab fa-github"></i> Github</a>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-lg-4 col-6 mb-3">
-            <div class="card">
-              <img class="project-img card-img-top" src="img/Louvre1.jpg" alt="">
-              <div class="card-body">
-                <h5 class="card-title">First Thing</h5>
-                <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis iste laudantium libero perspiciatis recusandae vitae doloribus placeat tempore ex repellat, quisquam illo nihil corrupti itaque quod natus voluptas atque rem!</p>
-                <a href="#" target="_blank" class="btn btn-outline-warning btn-sm my-1"><i class="fas fa-external-link-alt"></i> Project Link</a>
-                <a href="#" target="_blank" class="btn btn-outline-light btn-sm"><i class="fab fa-github"></i> Github</a>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-lg-4 col-6 mb-3">
-            <div class="card">
-              <img class="project-img card-img-top" src="img/singapore1.jpeg" alt="">
-              <div class="card-body">
-                <h5 class="card-title">First Thing</h5>
-                <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis iste laudantium libero perspiciatis recusandae vitae doloribus placeat tempore ex repellat, quisquam illo nihil corrupti itaque quod natus voluptas atque rem!</p>
-                <a href="#" target="_blank" class="btn btn-outline-warning btn-sm my-1"><i class="fas fa-external-link-alt" ></i> Project Link</a>
-                <a href="#" target="_blank" class="btn btn-outline-light btn-sm" ><i class="fab fa-github"></i> Github</a>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-lg-4 col-6 mb-3">
+          <div class="col-12 col-md-6 col-lg-4 mb-3">
             <div class="card">
               <img class="project-img card-img-top" src="img/project-parkinson.png" alt="">
               <div class="card-body">
-                <h5 class="card-title">Parkinson</h5>
-                <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis iste laudantium libero perspiciatis recusandae vitae doloribus placeat tempore ex repellat, quisquam illo nihil corrupti itaque quod natus voluptas atque rem!</p>
-                <a href="https://sarahmayarchibald.github.io/Parkinson/#home" target="_blank" class="btn btn-outline-warning btn-sm my-1" ><i class="fas fa-external-link-alt"></i> Project Link</a>
+                <h5 class="card-title">Parkinson Information</h5>
+                <p class="card-text">This homepage aims to provide information about Parkinson's disease. Users can find different links to local services in Oxfordshire and on a national scale. Developed with <span>Bootstrap 4</span> and Google maps embeded <span>APIs</span>.</p>
+                <a href="/projects/Parkinson/index.html" target="_blank" class="btn btn-outline-warning btn-sm my-1" ><i class="fas fa-external-link-alt"></i> Project Link</a>
                 <a href="https://github.com/sarahmayarchibald/Parkinson" target="_blank" class="btn btn-outline-light btn-sm"><i class="fab fa-github"></i> Github</a>
               </div>
             </div>
           </div>
 
-          <div class="col-lg-4 col-6 mb-3">
+          <div class="col-12 col-md-6 col-lg-4 mb-3">
+            <div class="card">
+              <img class="project-img card-img-top" src="img/project-kusina.png" alt="">
+              <div class="card-body">
+                <h5 class="card-title">Restaurant "Kusina sa Kalibo"</h5>
+                <p class="card-text">This homepage is dedicated to a Filipino family-run restaurant closely situated to a touristic destination in the Philippines. This project uses <span>Bootstrap 4</span> and some elements of  <span>JavaScript</span>.</p>
+                <a href="/projects/Kusina/index.html" target="_blank" class="btn btn-outline-warning btn-sm my-1"><i class="fas fa-external-link-alt" ></i> Project Link</a>
+                <a href="https://github.com/sarahmayarchibald/Kusina" target="_blank" class="btn btn-outline-light btn-sm" ><i class="fab fa-github"></i> Github</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-12 col-md-6 col-lg-4 mb-3">
+            <div class="card">
+              <img class="project-img card-img-top" src="img/project-signUpForm.png" alt="">
+              <div class="card-body">
+                <h5 class="card-title">Sign Up Form</h5>
+                <p class="card-text">A simple sign up form to practice the use of <span>Flexbox</span>.</p>
+                <a href="/projects/signUpForm/index.html" target="_blank" class="btn btn-outline-warning btn-sm my-1"><i class="fas fa-external-link-alt" ></i> Project Link</a>
+                <a href="https://github.com/sarahmayarchibald/signUp-form2" target="_blank" class="btn btn-outline-light btn-sm" ><i class="fab fa-github"></i> Github</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-12 col-md-6 col-lg-4 mb-3">
+            <div class="card">
+              <img class="project-img card-img-top" src="img/Hollywood1.jpg" alt="">
+              <div class="card-body">
+                <h5 class="card-title">Project</h5>
+                <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis iste laudantium libero perspiciatis recusandae vitae doloribus placeat tempore ex repellat, quisquam illo nihil corrupti itaque quod natus voluptas atque rem!</p>
+                <a href="#" target="_blank" class="btn btn-outline-warning btn-sm my-1"><i class="fas fa-external-link-alt"></i> Project Link</a>
+                <a href="#" target="_blank" class="btn btn-outline-light btn-sm"><i class="fab fa-github"></i> Github</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-12 col-md-6 col-lg-4 mb-3">
+            <div class="card">
+              <img class="project-img card-img-top" src="img/Louvre1.jpg" alt="">
+              <div class="card-body">
+                <h5 class="card-title">Project</h5>
+                <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis iste laudantium libero perspiciatis recusandae vitae doloribus placeat tempore ex repellat, quisquam illo nihil corrupti itaque quod natus voluptas atque rem!</p>
+                <a href="#" target="_blank" class="btn btn-outline-warning btn-sm my-1"><i class="fas fa-external-link-alt"></i> Project Link</a>
+                <a href="#" target="_blank" class="btn btn-outline-light btn-sm"><i class="fab fa-github"></i> Github</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-12 col-md-6 col-lg-4 mb-3">
             <div class="card">
               <img class="project-img card-img-top" src="img/singapore1.jpeg" alt="">
               <div class="card-body">
-                <h5 class="card-title">First Thing</h5>
+                <h5 class="card-title">Project</h5>
                 <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis iste laudantium libero perspiciatis recusandae vitae doloribus placeat tempore ex repellat, quisquam illo nihil corrupti itaque quod natus voluptas atque rem!</p>
                 <a href="#" target="_blank" class="btn btn-outline-warning btn-sm my-1"><i class="fas fa-external-link-alt" ></i> Project Link</a>
                 <a href="#" target="_blank" class="btn btn-outline-light btn-sm" ><i class="fab fa-github"></i> Github</a>
@@ -146,18 +157,6 @@
             </div>
           </div>
 
-          <div class="col-lg-4 col-6 mb-3">
-            <div class="card">
-              <img class="project-img card-img-top" src="img/project-signUpForm.png" alt="">
-              <div class="card-body">
-                <h5 class="card-title">Sign Up Form</h5>
-                <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis iste laudantium libero perspiciatis recusandae vitae doloribus placeat tempore ex repellat, quisquam illo nihil corrupti itaque quod natus voluptas atque rem!</p>
-                <a href="https://sarahmayarchibald.github.io/signUp-form2/" target="_blank" class="btn btn-outline-warning btn-sm my-1"><i class="fas fa-external-link-alt" ></i> Project Link</a>
-                <a href="https://github.com/sarahmayarchibald/signUp-form2" target="_blank" class="btn btn-outline-light btn-sm" ><i class="fab fa-github"></i> Github</a>
-              </div>
-            </div>
-          </div>
-          
         </div>
 
       </div>
