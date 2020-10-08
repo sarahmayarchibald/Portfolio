@@ -68,6 +68,11 @@ header {
   color: #EAC372;
 }
 
+.about-contact:hover {
+  text-decoration: none;
+  color: #ffC009;
+}
+
 /* Projects */
 .project-img {
   height: 270px;
