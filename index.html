@@ -1,286 +1,97 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
-  <head>
-    <!-- Required meta tags -->
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-
-    <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-    <!-- Font Awesome -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css" integrity="sha512-1PKOgIY59xJ8Co8+NE6FZ+LOAZKjy+KY8iq0G4B3CyeY6wYHN3yt9PW0XpSriVlkMXe40PTKnXrLnZ9+fkDaog==" crossorigin="anonymous" />
-    <title>Sarah-May Archibald | Portfolio</title>
-    <link rel="stylesheet" href="/css/styles.css">
-  </head>
-  <body>
-    <nav id="mainNavbar" class="navbar navbar-dark navbar-expand-md py-1 fixed-top">
-      <div class="container">
-        <a href="#" class="navbar-brand">SA</a>
-      <button class="navbar-toggler" data-toggle="collapse" data-target="#navLinks" aria-label="Toggle Navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse" id="navLinks">
-        <ul class="navbar-nav ml-auto">
-          <li class="nav-item">
-            <a href="#home" class="nav-link">HOME</a>
-          </li>
-          <li class="nav-item">
-            <a href="#about" class="nav-link">ABOUT</a>
-          </li>
-          <li class="nav-item">
-            <a href="#projects" class="nav-link">PROJECTS</a>
-          </li>
-          <li class="nav-item">
-            <a href="#skills" class="nav-link">SKILLS</a>
-          </li>
-          
-          <li class="nav-item">
-            <a href="#contact" class="nav-link">CONTACT</a>
-          </li>
-        </ul>
-      </div>
-
-      </div>
-      
-    </nav>
-
-    <header>
-      <div class="container" id="home">
-        <div class="row d-flex justify-content-center align-items-center text-center mx-3">
-            <div class="mainTitle">
-              <h1 class="title-primary">Sarah-May / Archibald</h1>
-              <h2 class="title-sub">front-end developer</h2>
-            </div>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.gstatic.com"> 
+    <link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@400;700&family=Roboto&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css" integrity="sha512-HK5fgLBL+xu6dm/Ii3z4xhlSUyZgTT9tuc/hSrtw6uzJOvgRr2a9jyxxT1ely+B+xFAmJKVSTbpM/CuL7qxO8w==" crossorigin="anonymous" />
+    <link rel="stylesheet" href="style.css">
+    <title>Portfolio | Sarah-May Archibald</title>
+</head>
+<body>
+    <header class="header" id="header">
+        <nav class="navbar">
+            <a href="#" class="logo">s | a</a>
+            <ul class="links">
+                <li><a href="#">Home</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </nav>
+        <div class="title">
+            <h1>Hi, I'm Sarah-May</h1>
+            <p>frontend developer</p>
+            <a href="#" class="btn">Learn more</a>
         </div>
-      </div>
     </header>
 
-    <!-- About Me-->
-    <section>
-      <div id="about">
-        <div class="container-fluid background-logo py-4">  
-          <div class="container">
-            <div class="section-title mt-5">
-              <h3>About Me</h3>
-            </div> 
-            <div class="about-sections d-flex flex-column py-2">
-              <div class="about-paragraph text-justify">
-                <p>Hi! My name is Sarah-May, I am a self-taught developer based in London. </p>
-                <p>My most vivid experience on how Web Development can influence and facilitate users was during my previous employment as a nurse. After hearing numerous testimonies on how patients were unable to easily find resources or a specialist to contact, my team and I created a leaflet, which in turn became my very first web project.</p>
-                <p>Through this experience I was able to use skills that I value, such as problem-solving, teamwork and attention to detail.
-                Although I am still getting the grip of JavaScript, I believe learning never stops and my goal is to develop more projects in the near future with jQuery, React, MySQL and Node.js.</p>
-                <p>If you would like us to work together, don’t hesitate to <a href="#contact" class="about-contact">contact me</a> !</p>
-                
-              </div>
-              <div class="about-download text-center">
-                <a href="CV-2020.docx" type="button" class="btn btn-custom" download><i class="fa fa-download"></i> Download CV</a>
-              </div>
-            </div>
-            
-          </div>
-          
-        </div>
-      </div>
-    </section>
-
-    <!-- My Projects -->    
-    <section class="py-4" id="projects">
-      <div class="container">
-        <div class="section-title mt-5">
-          <h3>My Projects</h3>
-        </div>  
-        <div class="row">
-          <div class="col-12 col-md-6 col-lg-4 mb-3">
-            <div class="card">
-              <img class="project-img card-img-top" src="img/project-parkinson.png" alt="">
-              <div class="card-body">
-                <h5 class="card-title">Parkinson Information</h5>
-                <p class="card-text">This homepage aims to provide information about Parkinson's disease. Users can find different links to local services in Oxfordshire and on a national scale. Developed with <span>Bootstrap 4</span> and Google maps embeded <span>APIs</span>.</p>
-                <a href="/projects/Parkinson/index.html" target="_blank" class="btn btn-outline-warning btn-sm my-1" ><i class="fas fa-external-link-alt"></i> Project Link</a>
-                <a href="https://github.com/sarahmayarchibald/Parkinson" target="_blank" class="btn btn-outline-light btn-sm"><i class="fab fa-github"></i> Github</a>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-12 col-md-6 col-lg-4 mb-3">
-            <div class="card">
-              <img class="project-img card-img-top" src="img/project-kusina.png" alt="">
-              <div class="card-body">
-                <h5 class="card-title">Restaurant "Kusina sa Kalibo"</h5>
-                <p class="card-text">This homepage is dedicated to a Filipino family-run restaurant closely situated to a touristic destination in the Philippines. This project uses <span>Bootstrap 4</span> and some elements of  <span>JavaScript</span>.</p>
-                <a href="/projects/Kusina/index.html" target="_blank" class="btn btn-outline-warning btn-sm my-1"><i class="fas fa-external-link-alt" ></i> Project Link</a>
-                <a href="https://github.com/sarahmayarchibald/Kusina" target="_blank" class="btn btn-outline-light btn-sm" ><i class="fab fa-github"></i> Github</a>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-12 col-md-6 col-lg-4 mb-3">
-            <div class="card">
-              <img class="project-img card-img-top" src="img/project-LANoire.png" alt="">
-              <div class="card-body">
-                <h5 class="card-title">L.A. Noire</h5>
-                <p class="card-text">A simple stand alone page about the famous video game, in French.</p>
-                <a href="/projects/LA-Noire/index.html" target="_blank" class="btn btn-outline-warning btn-sm my-1"><i class="fas fa-external-link-alt" ></i> Project Link</a>
-                <a href="https://github.com/sarahmayarchibald/LA-Noire-French" target="_blank" class="btn btn-outline-light btn-sm" ><i class="fab fa-github"></i> Github</a>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-12 col-md-6 col-lg-4 mb-3">
-            <div class="card">
-              <img class="project-img card-img-top" src="img/under-construction.svg" alt="">
-              <div class="card-body">
-                <h5 class="card-title">Project</h5>
-                <p class="card-text"> *** COMING SOON ***</p>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-12 col-md-6 col-lg-4 mb-3">
-            <div class="card">
-              <img class="project-img card-img-top" src="img/under-construction.svg" alt="">
-              <div class="card-body">
-                <h5 class="card-title">Project</h5>
-                <p class="card-text"> *** COMING SOON ***</p>
-                <!-- <a href="#" target="_blank" class="btn btn-outline-warning btn-sm my-1"><i class="fas fa-external-link-alt"></i> Project Link</a>
-                <a href="#" target="_blank" class="btn btn-outline-light btn-sm"><i class="fab fa-github"></i> Github</a> -->
-              </div>
-            </div>
-          </div>
-
-          <div class="col-12 col-md-6 col-lg-4 mb-3">
-            <div class="card">
-              <img class="project-img card-img-top" src="img/under-construction.svg" alt="">
-              <div class="card-body">
-                <h5 class="card-title">Project</h5>
-                <p class="card-text"> *** COMING SOON ***</p>
-                <!-- <a href="#" target="_blank" class="btn btn-outline-warning btn-sm my-1"><i class="fas fa-external-link-alt"></i> Project Link</a>
-                <a href="#" target="_blank" class="btn btn-outline-light btn-sm"><i class="fab fa-github"></i> Github</a> -->
-              </div>
-            </div>
-          </div>
-
-        </div>
-
-      </div>
-    </section>
-
-    <!-- Skills -->
-    <section>
-      <div id="skills">
-        <div class="container-fluid background-logo py-4">  
-          <div class="container">
-            <div class="section-title mt-5">
-              <h3>Skills</h3>
-            </div> 
-            <!-- Skills Logo -->
-            <div class="row text-center">
-              <div class="col-3 py-4">
-                <img class="skill-logo img-fluid" src="img/logo-html5.svg" alt="">
-              </div>
-  
-              <div class="col-3 py-4">
-                <img class="skill-logo img-fluid" src="img/logo-css3.svg" alt="">
-              </div>
-  
-              <div class="col-3 py-4">
-                <img class="skill-logo img-fluid" src="img/logo-sass.svg" alt="">
-              </div>
-  
-              <div class="col-3 py-4">
-                <img class="skill-logo img-fluid" src="img/logo-boostrap4.svg" alt="">
-              </div>
-  
-              <div class="col-3 py-4">
-                <img class="skill-logo img-fluid" src="img/logo-javascript.svg" alt="">
-              </div>
-  
-              <!-- <div class="col-3 py-4">
-                <img class="skill-logo img-fluid" src="img/logo-jquery.svg" alt="">
-              </div>
-  
-              <div class="col-3 py-4">
-                <img class="skill-logo img-fluid" src="img/logo-react.svg" alt="">
-              </div>
-  
-              <div class="col-3 py-4">
-                <img class="skill-logo img-fluid" src="img/logo-mysql.svg" alt="">
-              </div>
-  
-              <div class="col-3 py-4">
-                <img class="skill-logo img-fluid" src="img/logo-mongodb.svg" alt="">
-              </div>
-  
-              <div class="col-3 py-4">
-                <img class="skill-logo img-fluid" src="img/logo-wordpress.svg" alt="">
-              </div>
-   -->
-              <div class="col-3 py-4">
-                <img class="skill-logo img-fluid" src="img/logo-git.svg" alt="">
-              </div>
-              
-            </div>
-
-          </div>
-          
-        </div>
-      </div>
-    </section>
-
-    <!-- Contact Me -->
-    <section class="pb-5">
-      <div id="contact" >
+    <main>
         <div class="container">
-          <div class="section-title mt-5">
-            <h3>Contact Me</h3>
-          </div> 
-          <!-- Contact Logo -->
-          <div class="contact-sections d-flex flex-column flex-lg-row justify-content-center align-items-center my-4">
-            <div class="contact-logo d-flex justify-content-around align-items-baseline">
-              <a href="https://github.com/sarahmayarchibald" class="m-2" target="_blank"><i class="fab fa-github fa-3x"></i></a>
-              <a href="https://www.linkedin.com/in/sarahmayarchibald/" class="m-2" target="_blank"><i class="fab fa-linkedin fa-3x"></i></a>
-              <a href="mailto:sarahmay.archibald@gmail.com" class="m-2" target="_blank"><i class="fas fa-envelope fa-3x"></i></a>
+        <section id="projects">
+            <div class="section-title">
+                <h2>Projects</h2>
             </div>
-            <!-- Contact Form -->
-            <!-- <div class="contact-form text-center">
-              <form>                
-                <div class="form-group">
-                  <div class="row">
-                    <div class="col-lg-6 mt-3">
-                      <input type="text" class="form-control" placeholder="First name">
+            <div class="project-section">
+                <div class="project-cards">
+                    <div class="project-item">
+                        <img src="img/cat-moon.jpg" alt="" class="project-img">
+                        <h3>Project1</h3>
+                        <a href=""><i class="fab fa-github"></i></a>
+                        <a href=""><i class="fas fa-external-link-alt"></i></a>
                     </div>
-                    <div class="col-lg-6 mt-3">
-                      <input type="text" class="form-control" placeholder="Last name">
+
+                    <div class="project-item">
+                        <img src="img/cat-moon.jpg" alt="" class="project-img">
+                        <h3>Project1</h3>
+                        <a href=""></a>
                     </div>
-                  </div>
-                </div>
-                
-                <div class="form-group">
-                  <input type="email" class="form-control" placeholder="Email">
-                </div>                
-                
-                <div class="form-group">                  
-                  <textarea type="text" class="form-control" rows="5" placeholder="Message"></textarea>
-                </div>
 
-                <a href="" type="submit" class="btn btn-custom">Submit</a>
-              </form>
-            </div> -->
-          </div>
+                    <div class="project-item">
+                        <img src="img/cat-moon.jpg" alt="" class="project-img">
+                        <h3>Project1</h3>
+                        <a href=""></a>
+                    </div>
 
+                    <div class="project-item">
+                        <img src="img/cat-moon.jpg" alt="" class="project-img">
+                        <h3>Project1</h3>
+                        <a href=""></a>
+                    </div>
+
+                    <div class="project-item">
+                        <img src="img/cat-moon.jpg" alt="" class="project-img">
+                        <h3>Project1</h3>
+                        <a href=""></a>
+                    </div>
+
+                    <div class="project-item">
+                        <img src="img/cat-moon.jpg" alt="" class="project-img">
+                        <h3>Project1</h3>
+                        <a href=""></a>
+                    </div>
+                    
+                </div>
+            </div>
+            </section>
+
+            <section id="about">
+                <div class="section-title">
+                    <h2>About</h2>
+                </div>
+            </section>
+
+            <section id="contact">
+                <div class="section-title">
+                    <h2>Contact</h2>
+                </div>
+            </section>
         </div>
-      </div>
-    </section>
-
-    <footer class="text-center mt-2">
-      <p>Sarah-May Archibald &copy; 2020</p>
+    </main>
+    <footer>
+        <p>&copy;2021 Sarah-May Archibald</p>
     </footer>
-
-    <!-- Optional JavaScript -->
-    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
-
-  </body>
+</body>
 </html>
