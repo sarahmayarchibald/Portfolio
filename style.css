@@ -1,0 +1,138 @@
+:root {
+    --color: #c2b57a;
+    --primary-color: #0C1523;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+}
+
+h1, h2, h3 {
+    font-family: 'Comfortaa', cursive;
+    letter-spacing: 1.3px;
+}
+
+a {
+    text-decoration: none;
+    color: var(--color);
+}
+
+li {
+    list-style: none;
+}
+
+.btn {
+    background: var(--primary-color);
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-transform: uppercase;
+    letter-spacing: 1.2px;
+}
+
+.btn:hover {
+    background: #3B1A07;
+}
+
+.container {
+    max-width: 1024px;
+    margin: 0 auto;
+}
+
+.section-title {
+    text-align: center;
+    text-transform: uppercase;
+    height: 3rem;
+    padding: 5rem;
+}
+
+/* Header */
+.header {
+    height: 100vh;
+    width: 100%;
+    position: relative;
+}
+
+.navbar {
+    position: fixed;
+    width: 100%;
+    min-height: 70px;
+    background-color: var(--primary-color);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    z-index: 1;
+}
+
+.logo {
+    font-weight: 700;
+}
+
+ul {
+    height: 100%;
+    display: flex;
+}
+
+.links a {
+    padding: 10px;
+}
+
+.links a:hover {
+    border-bottom: 1px solid #998c50;
+    cursor: pointer;
+}
+
+.title {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    top: 0;
+    left: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    background-image: linear-gradient(to bottom,
+    #998c50, #c2b57a);
+    clip-path: circle(55% at 0 50%);
+    padding: 20px;
+    line-height: 1.5;
+}
+
+.title h1 {
+    max-width: 463px;
+}
+
+.title .btn {
+    margin: 10px 0; 
+}
+
+/* Projects */
+.project-item {
+    text-align: center;
+    background: #C2B57A;
+}
+.project-cards {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2rem;
+}
+
+.project-img {
+    max-height: 150px;
+    width: auto;
+}
+
+
+
+@media(max-width: 350px) {
+    .navbar {
+        flex-direction: column;
+    }
+}
